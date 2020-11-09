@@ -7,7 +7,8 @@
 
 .wrapper .sidebar {
     width: $sidebar-lg-width;
-    height: 100vh;
+    height: 100%;
+    position: fixed;
     background: #fff;
 }
 
@@ -15,6 +16,7 @@
     min-height: 100vh;
     background: #f9fafb;
     width: calc(100% - #{$sidebar-lg-width});
+    margin-left: $sidebar-lg-width;
 }
 
 /* Medium to large screens */
@@ -25,6 +27,7 @@
 
     body.sidebar-md .wrapper .page {
         width: calc(100% - #{$sidebar-md-width});
+        margin-left: $sidebar-md-width;
     }
 }
 
@@ -37,8 +40,8 @@
     }
 
     .wrapper .page {
-        width: 100vw;
-        margin-left: calc(#{$sidebar-lg-width} * -1);
+        width: 100%;
+        margin-left: 0;
     }
 
     body.sidebar-sm .wrapper .sidebar {
