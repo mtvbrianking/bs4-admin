@@ -9,7 +9,10 @@
     width: $sidebar-lg-width;
     height: 100%;
     position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
     background: #fff;
+    transition: width $transition-speed $transition-fn;
 }
 
 .wrapper .page {
@@ -23,6 +26,12 @@
 @media (min-width: 992px) {
     body.sidebar-md .wrapper .sidebar {
         width: $sidebar-md-width;
+        transition: width $transition-speed $transition-fn;
+    }
+
+    body.sidebar-md-stretch .wrapper .sidebar {
+        width: $sidebar-lg-width;
+        transition: width $transition-speed $transition-fn;
     }
 
     body.sidebar-md .wrapper .page {
@@ -36,7 +45,10 @@
     .wrapper .sidebar {
         z-index: 999;
         width: $sidebar-lg-width;
+
+        opacity: 0;
         visibility: hidden;
+        transition: visibility 0.2s linear 300ms, opacity 300ms;
     }
 
     .wrapper .page {
@@ -45,7 +57,9 @@
     }
 
     body.sidebar-sm .wrapper .sidebar {
+        opacity: 1;
         visibility: visible;
+        transition: visibility 0s linear 0s, opacity 300ms;
     }
 
     body.sidebar-sm .wrapper .page {

@@ -34,4 +34,19 @@
             }
         }
     });
+
+    //  on sidebar-md when hover
+
+    $(".sidebar .menu").hover(
+        function () {
+            if (body.hasClass('sidebar-md')) {
+                body.addClass("sidebar-md-stretch");
+            }
+        },
+        function () {
+            if (body.hasClass('sidebar-md')) {
+                body.removeClass("sidebar-md-stretch");
+            }
+        }
+    );
 })();
