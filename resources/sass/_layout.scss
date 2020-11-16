@@ -9,6 +9,7 @@
     width: $sidebar-lg-width;
     height: 100%;
     position: fixed;
+    white-space: nowrap;
     overflow-x: hidden;
     overflow-y: auto;
     background: #fff;
@@ -37,6 +38,11 @@
     body.sidebar-md .wrapper .page {
         width: calc(100% - #{$sidebar-md-width});
         margin-left: $sidebar-md-width;
+    }
+
+    .sidebar-md:not(.sidebar-md-stretch) .sidebar nav > ul > li > a span.nav-text {
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
