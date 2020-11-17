@@ -1,0 +1,23 @@
+.icon-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    i {
+        position: absolute;
+        margin-left: 5px;
+    }
+
+    input {
+        padding-left: 35px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid $border-color;
+
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+            border-bottom: 1px solid darken($border-color, 25%);
+        }
+    }
+}

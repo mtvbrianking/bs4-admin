@@ -11,13 +11,11 @@
         white-space: nowrap;
         overflow-x: hidden;
         overflow-y: auto;
-        background: #fff;
         transition: width $transition-speed $transition-fn;
     }
 
     .page {
         min-height: 100vh;
-        background: #f9fafb;
         width: calc(100% - #{$sidebar-lg-width});
         margin-left: $sidebar-lg-width;
     }
@@ -81,16 +79,19 @@
     display: flex;
     flex-direction: column;
 
-    .content {
-        flex-grow: 1;
-    }
-
     .header {
-        display: flex !important;
+        height: $topbar-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .menu-right {
-            margin-left: auto !important;
+            margin-left: auto;
         }
+    }
+
+    .content {
+        flex-grow: 1;
     }
 }
 
