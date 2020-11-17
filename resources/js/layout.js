@@ -35,9 +35,9 @@
         }
     });
 
-    //  on sidebar-md when hover
+    //  on sidebar hover
 
-    $(".sidebar .menu").hover(
+    $(".sidebar").hover(
         function () {
             if (body.hasClass('sidebar-md')) {
                 body.addClass("sidebar-md-stretch");

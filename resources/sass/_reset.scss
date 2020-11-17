@@ -1,9 +1,10 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
+    // border: 0 solid #d2d6dc;
 }
 
 body {
