@@ -1,0 +1,23 @@
+.page {
+    .header {
+        border-bottom: 1px solid $border-color;
+
+        .sidebar-toggler {
+            padding: 0 20px 0 20px;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        form {
+            width: 25%;
+        }
+
+        nav.menu-right {
+            // width: 25%;
+        }
+    }
+
+    .content {
+        margin: 20px;
+    }
+}

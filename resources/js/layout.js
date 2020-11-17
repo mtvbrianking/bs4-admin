@@ -49,4 +49,14 @@
             }
         }
     );
+
+    document.body.addEventListener("keyup", function (e) {
+        if (!e.ctrlKey) { // Ctrl + '/'
+            // return false;
+        }
+
+        if (e.keyCode == 191) {
+            $("input[type=search]").focus();
+        }
+    });
 })();
