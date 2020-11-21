@@ -1,9 +1,10 @@
 .page {
     .header {
+        padding: 0 20px 0 20px;
         border-bottom: 1px solid $border-color;
 
         .sidebar-toggler {
-            padding: 0 20px 0 20px;
+            padding-right: 20px;
             margin: 0;
             font-size: 20px;
         }
@@ -13,7 +14,37 @@
         }
 
         nav.menu-right {
-            // width: 25%;
+            padding-right: 0px;
+
+            ul.navbar-nav {
+                display: flex;
+                flex-direction: row;
+                margin-left: auto;
+
+                li.nav-item {
+
+                    a.nav-link {
+
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    max-width: 280px;
+                    position: absolute;
+                    right: -5px;
+                    left: auto;
+                    border-radius: 0;
+                    margin-top: 7px;
+                    border: 1px solid #f2f4f9;
+                    box-shadow: 0 5px 10px 0 rgba(183, 192, 206, .2);
+                    font-size: 0.875rem;
+                }
+            }
         }
     }
 
