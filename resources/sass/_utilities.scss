@@ -13,11 +13,13 @@
         border: 0;
         border-radius: 0;
         border-bottom: 1px solid $border-color;
+        background: transparent;
 
         &:focus {
             outline: 0;
             box-shadow: none;
             border-bottom: 1px solid darken($border-color, 25%);
+            background: transparent;
         }
     }
 }

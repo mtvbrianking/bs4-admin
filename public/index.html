@@ -18,7 +18,6 @@
                 </a>
             </nav>
             <nav class="menu">
-                <!-- Make this scrollable -->
                 <ul class="top">
                     <li class="nav-item">
                         <a href="#" class="nav-link">
@@ -89,9 +88,70 @@
                         <input type="search" class="form-control" placeholder="Search...">
                     </div>
                 </form>
-                <nav class="menu-right">
-                    <ul>
-                        <li>User</li>
+                <nav class="menu-right navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown nav-profile">
+                            <a class="nav-link" href="#" id="profileDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="https://ui-avatars.com/api?name=John+Doe" alt="profile">
+                            </a>
+                            <div class="dropdown-menu p-3" aria-labelledby="profileDropdown">
+                                <div class="d-flex flex-column align-items-center" style="border-bottom: 1px solid #eee;">
+                                    <div class="mb-2">
+                                        <img src="https://ui-avatars.com/api?name=John+Doe" loading="lazy">
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="font-weight-bold mb-0">John Doe</p>
+                                        <p class="text-muted mb-3">jdoe@example.com</p>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="dropdown-item px-0">
+                                        <i class='bx bx-user'></i>
+                                        <span class="ml-2">Profile</span>
+                                    </a>
+                                    <a href="#" class="dropdown-item px-0">
+                                        <i class='bx bx-log-out'></i>
+                                        <span class="ml-2">Log Out</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--
+                        <li class="nav-item dropdown nav-profile">
+                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown2" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="https://ui-avatars.com/api?name=John+Doe" alt="profile">
+                            </a>
+                            <div class="dropdown-menu p-3" aria-labelledby="profileDropdown2">
+                                <div class="dropdown-header d-flex flex-column align-items-center">
+                                    <div class="figure mb-3">
+                                        <img src="https://ui-avatars.com/api?name=John+Doe" alt="">
+                                    </div>
+                                    <div class="info text-center">
+                                        <p class="name font-weight-bold mb-0">John Doe</p>
+                                        <p class="email text-muted mb-3">jdoe@example.com</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-body">
+                                    <ul class="profile-nav p-0 pt-3">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class='bx bx-user'></i>
+                                                <span>Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class='bx bx-log-out'></i>
+                                                <span>Log Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        -->
                     </ul>
                 </nav>
             </div>

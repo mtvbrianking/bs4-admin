@@ -36,7 +36,9 @@
     }
 
     body.sidebar-md-stretch .wrapper .sidebar {
+        z-index: 999;
         width: $sidebar-lg-width;
+        // box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
         transition: width $transition-speed $transition-fn;
     }
 }
@@ -67,7 +69,7 @@
         }
 
         .page {
-            background: rgba(0, 0, 0, .3);
+            background: $gray-300;
         }
     }
 }
