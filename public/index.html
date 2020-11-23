@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
+    <style type="text/css">
+        .btn-light {
+            color: #212529;
+            background-color: #ffffff;
+            border-color: #e8e8e8;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -82,7 +89,7 @@
             <div class="header">
                 <!-- Make this fixed top -->
                 <i class="bx bx-menu sidebar-toggler"></i>
-                <form class="search-form">
+                <form class="search-form d-none d-sm-block">
                     <div class="icon-group">
                         <i class="bx bx-search"></i>
                         <input type="search" class="form-control" placeholder="Search...">
@@ -117,60 +124,60 @@
                                 </div>
                             </div>
                         </li>
-                        <!--
-                        <li class="nav-item dropdown nav-profile">
-                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown2" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="https://ui-avatars.com/api?name=John+Doe" alt="profile">
-                            </a>
-                            <div class="dropdown-menu p-3" aria-labelledby="profileDropdown2">
-                                <div class="dropdown-header d-flex flex-column align-items-center">
-                                    <div class="figure mb-3">
-                                        <img src="https://ui-avatars.com/api?name=John+Doe" alt="">
-                                    </div>
-                                    <div class="info text-center">
-                                        <p class="name font-weight-bold mb-0">John Doe</p>
-                                        <p class="email text-muted mb-3">jdoe@example.com</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-body">
-                                    <ul class="profile-nav p-0 pt-3">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class='bx bx-user'></i>
-                                                <span>Profile</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class='bx bx-log-out'></i>
-                                                <span>Log Out</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        -->
                     </ul>
                 </nav>
             </div>
             <div class="content">
-                <p>
-                    Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum facilis quia sapiente omnis itaque, voluptate eveniet rem dolore eius ratione, dicta perspiciatis placeat assumenda, velit, a officiis at qui. Corporis consequatur porro laborum, inventore iste autem ducimus nulla, eum cumque officiis ea excepturi temporibus cum exercitationem ipsa tempora nihil blanditiis voluptatem ipsum suscipit obcaecati. Facilis possimus dicta voluptatem quo id, quisquam tenetur eveniet quaerat porro deserunt. Voluptatum architecto, ex deserunt placeat sunt deleniti odio optio impedit aspernatur voluptatibus odit quas asperiores nostrum fugit. Inventore a quae officia placeat accusantium quam, modi ducimus, totam et! Non aliquam harum explicabo labore assumenda.
-                </p>
-                <p>
-                    Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum facilis quia sapiente omnis itaque, voluptate eveniet rem dolore eius ratione, dicta perspiciatis placeat assumenda, velit, a officiis at qui. Corporis consequatur porro laborum, inventore iste autem ducimus nulla, eum cumque officiis ea excepturi temporibus cum exercitationem ipsa tempora nihil blanditiis voluptatem ipsum suscipit obcaecati. Facilis possimus dicta voluptatem quo id, quisquam tenetur eveniet quaerat porro deserunt. Voluptatum architecto, ex deserunt placeat sunt deleniti odio optio impedit aspernatur voluptatibus odit quas asperiores nostrum fugit. Inventore a quae officia placeat accusantium quam, modi ducimus, totam et! Non aliquam harum explicabo labore assumenda.
-                </p>
-                <p>
-                    Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum facilis quia sapiente omnis itaque, voluptate eveniet rem dolore eius ratione, dicta perspiciatis placeat assumenda, velit, a officiis at qui. Corporis consequatur porro laborum, inventore iste autem ducimus nulla, eum cumque officiis ea excepturi temporibus cum exercitationem ipsa tempora nihil blanditiis voluptatem ipsum suscipit obcaecati. Facilis possimus dicta voluptatem quo id, quisquam tenetur eveniet quaerat porro deserunt. Voluptatum architecto, ex deserunt placeat sunt deleniti odio optio impedit aspernatur voluptatibus odit quas asperiores nostrum fugit. Inventore a quae officia placeat accusantium quam, modi ducimus, totam et! Non aliquam harum explicabo labore assumenda.
-                </p>
+                <div class="d-flex flex-row flex-wrap align-items-center justify-content-between mb-2">
+                    <div class="d-flex flex-column mb-1">
+                        <h4 class="mb-0">
+                            <i class="bx bx-message-square-detail"></i>&nbsp;Email
+                        </h4>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small p-0 m-0 d-none d-sm-flex">
+                                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="#">Email</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Compose</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="mb-1">
+                        <button class="btn btn-sm btn-light">
+                            <i class="bx bx-menu"></i>&nbsp;Inbox
+                        </button>
+                        <button class="btn btn-sm btn-light">
+                            <i class="bx bx-pencil"></i>&nbsp;Compose
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="mb-0">
+                            Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum facilis quia sapiente omnis itaque, voluptate eveniet rem dolore eius ratione, dicta perspiciatis placeat assumenda, velit, a officiis at qui. Corporis consequatur porro laborum, inventore iste autem ducimus nulla, eum cumque officiis ea excepturi temporibus cum exercitationem ipsa tempora nihil blanditiis voluptatem ipsum suscipit obcaecati. Facilis possimus dicta voluptatem quo id, quisquam tenetur eveniet quaerat porro deserunt. Voluptatum architecto, ex deserunt placeat sunt deleniti odio optio impedit aspernatur voluptatibus odit quas asperiores nostrum fugit. Inventore a quae officia placeat accusantium quam, modi ducimus, totam et! Non aliquam harum explicabo labore assumenda.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="mb-0">
+                            Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum facilis quia sapiente omnis itaque, voluptate eveniet rem dolore eius ratione, dicta perspiciatis placeat assumenda, velit, a officiis at qui. Corporis consequatur porro laborum, inventore iste autem ducimus nulla, eum cumque officiis ea excepturi temporibus cum exercitationem ipsa tempora nihil blanditiis voluptatem ipsum suscipit obcaecati. Facilis possimus dicta voluptatem quo id, quisquam tenetur eveniet quaerat porro deserunt. Voluptatum architecto, ex deserunt placeat sunt deleniti odio optio impedit aspernatur voluptatibus odit quas asperiores nostrum fugit. Inventore a quae officia placeat accusantium quam, modi ducimus, totam et! Non aliquam harum explicabo labore assumenda.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="mb-0">
+                            Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum facilis quia sapiente omnis itaque, voluptate eveniet rem dolore eius ratione, dicta perspiciatis placeat assumenda, velit, a officiis at qui. Corporis consequatur porro laborum, inventore iste autem ducimus nulla, eum cumque officiis ea excepturi temporibus cum exercitationem ipsa tempora nihil blanditiis voluptatem ipsum suscipit obcaecati. Facilis possimus dicta voluptatem quo id, quisquam tenetur eveniet quaerat porro deserunt. Voluptatum architecto, ex deserunt placeat sunt deleniti odio optio impedit aspernatur voluptatibus odit quas asperiores nostrum fugit. Inventore a quae officia placeat accusantium quam, modi ducimus, totam et! Non aliquam harum explicabo labore assumenda.
+                        </p>
+                    </div>
+                </div>
             </div>
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
                 <p class="text-muted text-center text-md-left">
                     Copyright &copy; 2020 <a href="https://www.nobleui.com" target="_blank">BACKEND</a>. All rights reserved
                 </p>
-                <p class="text-muted text-center text-md-left mb-0 d-none d-md-block">
+                <p class="text-muted text-center text-md-left d-none d-md-block">
                     Handcrafted With <i class='bx bxs-heart text-danger'></i>
                 </p>
             </footer>

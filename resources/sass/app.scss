@@ -10,5 +10,10 @@
 @import './typography';
 
 @import './sidebar';
+@import './page';
 @import './topbar';
 @import './footer';
+
+@import './components/form';
+
+@import './pages/auth';

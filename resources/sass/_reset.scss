@@ -26,6 +26,14 @@ ul > li {
 
 a {
     text-decoration: none;
+
+    &:hover {
+        color: theme-color(primary);
+    }
+}
+
+nav ol.breadcrumb {
+    background: transparent;
 }
 
 // Reset bootstrap styling...
