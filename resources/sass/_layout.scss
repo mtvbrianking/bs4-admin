@@ -11,6 +11,7 @@
         white-space: nowrap;
         overflow-x: hidden;
         overflow-y: auto;
+        z-index: 999;
         transition: width $transition-speed $transition-fn;
     }
 
@@ -36,7 +37,7 @@
     }
 
     body.sidebar-md-stretch .wrapper .sidebar {
-        z-index: 999;
+        // z-index: 999;
         width: $sidebar-lg-width;
         // box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
         transition: width $transition-speed $transition-fn;
@@ -47,7 +48,7 @@
 @media (max-width: 991.98px) {
     .wrapper {
         .sidebar {
-            z-index: 999;
+            // z-index: 999;
             width: $sidebar-lg-width;
 
             opacity: 0;
