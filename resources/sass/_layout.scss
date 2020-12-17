@@ -68,10 +68,19 @@
             visibility: visible;
             transition: visibility 0s linear 0s, opacity 300ms;
         }
+    }
 
-        .page {
-            background: $gray-300;
-        }
+    body.sidebar-sm .wrapper::before {
+        content: '';
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        transition: all 3s ease;
+        z-index: 980;
     }
 }
 

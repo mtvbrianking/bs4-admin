@@ -12,9 +12,21 @@ $sidebar-brand-height: 60px;
 $topbar-height: 60px;
 
 // Typography
+
 $font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.875rem;
-$line-height-base: 1.5;
+
+$font-size-base:              1rem; // 0.875rem;
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
+$font-weight-lighter:         200;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            600;
+$font-weight-bolder:          700;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.5;
 
 // .................
 

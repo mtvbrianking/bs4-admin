@@ -1,11 +1,11 @@
 .sidebar {
-    font-weight: 300;
+    font-weight: $font-weight-base;
     color: $sidebar-color;
     background: $sidebar-bg;
     // border-right: 1px solid $border-color;
-    -webkit-box-shadow: 3px 0px 5px 0px $sidebar-bg;
-    -moz-box-shadow: 3px 0px 5px 0px $sidebar-bg;
-    box-shadow: 3px 0px 5px 0px $sidebar-bg;
+    // -webkit-box-shadow: 3px 0px 5px 0px $sidebar-bg;
+    // -moz-box-shadow: 3px 0px 5px 0px $sidebar-bg;
+    // box-shadow: 3px 0px 5px 0px $sidebar-bg;
 
 
     nav.brand {
@@ -20,12 +20,12 @@
             margin: 0;
             color: $gray-500;
             font-size: 20px;
-            font-weight: 500;
+            font-weight: $font-weight-bold;
             text-transform: uppercase;
 
             &:hover {
                 color: $white;
-                font-weight: 700;
+                // font-weight: $font-weight-bolder;
             }
 
             span.nav-text {
@@ -42,7 +42,7 @@
                 color: $text-muted;
                 font-size: 10px;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: $font-weight-bolder;
                 letter-spacing: 0.5px;
                 margin-bottom: 5px;
                 height: 15px;
@@ -75,12 +75,12 @@
                 &:hover {
                     a.nav-link {
                         color: $white;
-                        font-weight: 400;
+                        font-weight: $font-weight-bold;
                         // color: theme-color(primary);
 
                         .nav-icon {
                             color: $white;
-                            font-weight: 400;
+                            // font-weight: $font-weight-bold;
                             // color: theme-color(primary);
                             fill: rgba(239, 243, 255, .5);
                         }
@@ -156,7 +156,7 @@
                             &.active {
                                 // color: theme-color(primary);
                                 color: $white;
-                                font-weight: 400;
+                                font-weight: $font-weight-bold;
 
                                 &::before {
                                     // background: theme-color(primary);
