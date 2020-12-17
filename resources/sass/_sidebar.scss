@@ -2,8 +2,11 @@
     font-weight: 300;
     color: $sidebar-color;
     background: $sidebar-bg;
-    border-right: 1px solid $border-color;
-    // shadow...
+    // border-right: 1px solid $border-color;
+    -webkit-box-shadow: 3px 0px 5px 0px $sidebar-bg;
+    -moz-box-shadow: 3px 0px 5px 0px $sidebar-bg;
+    box-shadow: 3px 0px 5px 0px $sidebar-bg;
+
 
     nav.brand {
         height: $sidebar-brand-height;
