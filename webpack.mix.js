@@ -7,5 +7,10 @@ mix.js('resources/js/layout.js', 'public/assets/js');
 
 mix.sass('resources/sass/app.scss', 'public/assets/css');
 
+mix.postCss('resources/css/tailwind.css', 'public/assets/css', [
+        require('tailwindcss'),
+        require('autoprefixer')
+    ]);
+
 mix.copy('node_modules/boxicons/css/boxicons.min.css', 'public/assets/vendor/boxicons/css/boxicons.min.css');
 mix.copyDirectory('node_modules/boxicons/fonts', 'public/assets/vendor/boxicons/fonts');
